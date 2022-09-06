@@ -1,8 +1,8 @@
 /*COLOR*/
 /*FONT*/
 body {
+  margin: 0px 0px 60px 0px !important;
   background-color: #F0F0F0;
-  margin-bottom: 60px;
 }
 
 .mx {
@@ -22,4 +22,12 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.absolute {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }/*# sourceMappingURL=global.css.map */

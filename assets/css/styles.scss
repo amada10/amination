@@ -6,7 +6,7 @@ header{
     flex-direction: row;
     align-items: center;
     h2{
-        font-family: global.$brushScript;
+        font-family: global.$brushScript, Courier;
         font-size: 32px;
         color: global.$logo;
         a{
@@ -20,7 +20,7 @@ header{
         ul{
             li{
                 list-style-type: none;
-                font-family: global.$inkFree;
+                font-family: global.$inkFree, 'Trebuchet MS';
                 i{
                     margin: 0px 5px;
                     color: global.$secondary;
@@ -63,6 +63,22 @@ header{
 /*SECTION STYLE*/
 
 section{
-    height: 560px;
-    border: 1px solid black;
+    .banniere{
+        height: 560px;
+        position: relative;
+        .myVideoBg{
+            width: 100%;
+            height: 560px;
+            object-fit: cover;
+        }
+        .mask-video{
+            background-color: black;
+            opacity: 0.5;
+            z-index: 2;
+        }
+        .content{
+            color: white;
+            z-index: 3
+        }
+    }
 }
