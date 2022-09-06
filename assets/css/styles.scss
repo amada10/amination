@@ -1,0 +1,54 @@
+@use 'global';
+
+/*Header style*/
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    h2{
+        font-family: global.$brushScript;
+        font-size: 32px;
+        color: global.$logo;
+        a{
+            color: global.$logo;
+        }
+    }
+    nav {
+        width: 50%;
+        font-size: 20px;
+        color: global.$texte;
+        ul{
+            li{
+                list-style-type: none;
+                font-family: global.$inkFree;
+                i{
+                    margin: 0px 5px;
+                    color: global.$secondary;
+                }
+                i:nth-child(2){
+                    color: global.$texte;
+                    font-size: 12px;
+                }
+            }
+            
+        }
+    }
+    .other {
+        height: 50px;
+        width: 15%;
+        margin-left: 25%;
+        button{
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px 15px;
+            color: global.$white;
+            border: none;
+            border-radius: 10px;
+            background-color: global.$secondary;
+            transition: 0.5s;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+}

@@ -1,0 +1,71 @@
+/*COLOR*/
+/*FONT*/
+body {
+  background-color: #F0F0F0;
+  margin: 0px 30px;
+}
+
+.block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.clikable {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Header style*/
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+header h2 {
+  font-family: "Brush Script MT";
+  font-size: 32px;
+  color: #2E3244;
+}
+header h2 a {
+  color: #2E3244;
+}
+header nav {
+  width: 50%;
+  font-size: 20px;
+  color: #516079;
+}
+header nav ul li {
+  list-style-type: none;
+  font-family: "Ink Free";
+}
+header nav ul li i {
+  margin: 0px 5px;
+  color: #F1895C;
+}
+header nav ul li i:nth-child(2) {
+  color: #516079;
+  font-size: 12px;
+}
+header .other {
+  height: 50px;
+  width: 15%;
+  margin-left: 25%;
+}
+header .other button {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 15px;
+  color: #F0F0F0;
+  border: none;
+  border-radius: 10px;
+  background-color: #F1895C;
+  transition: 0.5s;
+}
+header .other button:hover {
+  transform: scale(1.1);
+}/*# sourceMappingURL=styles.css.map */

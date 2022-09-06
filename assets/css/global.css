@@ -1,0 +1,21 @@
+/*COLOR*/
+/*FONT*/
+body {
+  background-color: #F0F0F0;
+  margin: 0px 30px;
+}
+
+.block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.clikable {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}/*# sourceMappingURL=global.css.map */
