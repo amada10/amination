@@ -1,6 +1,7 @@
 /*COLOR*/
 $white: #F0F0F0;
 $texte: #516079;
+$black: black;
 $logo: #2E3244;
 $secondary: #F1895C;
 
@@ -25,6 +26,9 @@ body{
 }
 .clikable{
     cursor: pointer;
+}
+li{
+    list-style-type: none;
 }
 a{
     text-decoration: none

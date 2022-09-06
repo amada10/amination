@@ -78,7 +78,40 @@ section{
         }
         .content{
             color: white;
-            z-index: 3
+            z-index: 3;
+            .top-tab-list{
+                ul{
+                    margin: 50px 90px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    .top-tab-item{
+                        cursor: pointer;
+                        font-size: 18px;
+                        padding: 20px 25px;
+                        background-color: rgba(0, 0, 0, 0.6);
+                        border-radius: 30px;
+                        &:hover{
+                            color: global.$black;
+                            background-color: global.$white;
+                        }
+                    }
+                }
+            }
+            .description-banniere{
+                width: 50%;
+                margin: auto;
+                text-align: center;
+                h1{
+                    font-size: 36px;
+                    font-weight: bolder;
+                    font-family: global.$brushScript, 'Trebuchet MS';
+                }
+                p{
+                    font-size: 16px;
+                    font-family: global.$inkFree ,Courier;
+                }
+            }
         }
     }
 }
