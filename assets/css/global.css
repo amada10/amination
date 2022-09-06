@@ -2,6 +2,10 @@
 /*FONT*/
 body {
   background-color: #F0F0F0;
+  margin-bottom: 60px;
+}
+
+.mx {
   margin: 0px 30px;
 }
 

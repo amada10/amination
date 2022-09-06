@@ -2,6 +2,10 @@
 /*FONT*/
 body {
   background-color: #F0F0F0;
+  margin-bottom: 60px;
+}
+
+.mx {
   margin: 0px 30px;
 }
 
@@ -75,4 +79,10 @@ header .other button {
 }
 header .other button:hover {
   transform: scale(1.1);
+}
+
+/*SECTION STYLE*/
+section {
+  height: 560px;
+  border: 1px solid black;
 }/*# sourceMappingURL=styles.css.map */
