@@ -112,6 +112,22 @@ section{
                     font-family: global.$inkFree ,Courier;
                 }
             }
+            .bar-search{
+                width: 50%;
+                margin: 50px auto;
+                input{
+                    width: 95%;
+                    height: 60px;
+                    border-radius: 30px;
+                    padding: 10px 50px;
+                    &:focus{
+                        border: 1px solid global.$secondary;
+                    }
+                }
+            }
+            .relative-search{
+                
+            }
         }
     }
 }
