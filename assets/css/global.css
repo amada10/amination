@@ -20,6 +20,12 @@
     padding: 5px 10px;
     margin: 10px 0px;
   }
+  section .banniere .myVideoBg {
+    width: 100%;
+    height: 560px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 /*Tablette large*/
 @media screen and (min-width: 661px) and (max-width: 991px) {
@@ -44,6 +50,12 @@
     font-size: 16px;
     padding: 10px 15px;
   }
+  section .banniere .myVideoBg {
+    width: 100%;
+    height: 560px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 /*Desktop*/
 @media screen and (min-width: 992px) {
@@ -60,11 +72,42 @@
     justify-content: space-evenly;
   }
   header .other {
-    width: 20%;
+    width: 25%;
   }
   header .other button {
     font-size: 16px;
     padding: 10px 15px;
+  }
+  section .banniere .myVideoBg {
+    width: 100%;
+    height: 560px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  section .banniere .content .related-search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    justify-content: center !important;
+  }
+  section .banniere .content .related-search ul {
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
+@media screen and (max-width: 525px) {
+  section .banniere .content .top-tab-list ul {
+    margin: 0px;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  section .banniere .content .top-tab-list ul .top-tab-item {
+    margin: 5px;
   }
 }
 /*COLOR*/
