@@ -7,7 +7,6 @@ header{
     align-items: center;
     h2{
         font-family: global.$brushScript, Courier;
-        font-size: 32px;
         color: global.$logo;
         a{
             color: global.$logo;
@@ -15,7 +14,6 @@ header{
     }
     nav {
         width: 50%;
-        font-size: 20px;
         color: global.$texte;
         ul{
             li{
@@ -35,7 +33,6 @@ header{
     }
     .other {
         height: 50px;
-        width: 15%;
         margin-left: 25%;
         .search-icone i{
             font-size: 20px;
@@ -45,9 +42,7 @@ header{
             }
         }
         button{
-            font-size: 16px;
             font-weight: bold;
-            padding: 10px 15px;
             color: global.$white;
             border: none;
             border-radius: 10px;

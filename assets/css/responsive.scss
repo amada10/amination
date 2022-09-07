@@ -1,0 +1,80 @@
+
+@mixin block{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/*Smartphone*/
+@media only screen and (min-width: 50px) and (max-width: 660px){
+    body{
+        margin: 0px !important;
+    }
+    //HEADER
+    header{
+        margin: 0px 10px !important;
+        nav{
+            font-size: 12px;
+            ul{
+                display: none;
+            }
+        }
+        .other{
+            width: 70%;
+            button{
+                font-size: 12px;
+                padding: 5px 10px;
+                margin: 10px 0px;
+            }
+        }
+    }
+}
+
+/*Tablette large*/
+@media screen and (min-width: 661px) and (max-width: 991px){
+    //HEADER
+    header{
+        h2{
+            font-size: 26px;
+        }
+        nav{
+            display: inline-block;
+            font-size: 15px;
+            ul{
+                width: 100%;
+                @include block;
+            }
+        }
+        .other{
+            width: 30%;
+            button{
+                font-size: 16px;
+                padding: 10px 15px;
+            }
+        }
+    }
+}
+
+/*Desktop*/
+@media screen and (min-width: 992px) {
+    //HEADER
+    header{
+        h2{
+            font-size: 30px;
+        }
+        nav{
+        font-size: 18px;
+            ul{
+                @include block;
+            }
+        }
+        .other{
+            width: 20%;
+            button{
+                font-size: 16px;
+                padding: 10px 15px;
+            }
+        }
+    }
+}
