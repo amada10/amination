@@ -1,9 +1,9 @@
 
-@mixin block{
+@mixin block($justifyContent){
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: $justifyContent;
 }
 
 /*Smartphone*/
@@ -22,7 +22,7 @@
         }
         .other{
             width: 100%;
-            @include block;
+            @include block(space-evenly);
             button{
                 font-size: 12px;
                 padding: 5px 10px;
@@ -55,12 +55,12 @@
             font-size: 15px;
             ul{
                 width: 100%;
-                @include block;
+                @include block(space-evenly);
             }
         }
         .other{
             width: 30%;
-            @include block;
+            @include block(space-evenly);
             button{
                 font-size: 16px;
                 padding: 10px 15px;
@@ -91,12 +91,12 @@
         nav{
         font-size: 18px;
             ul{
-                @include block;
+                @include block(space-evenly);
             }
         }
         .other{
             width: 20%;
-            @include block;
+            @include block(space-evenly);
             button{
                 font-size: 16px;
                 padding: 10px 15px;
@@ -114,11 +114,10 @@
             }
             .content{
                 .related-search{
-                    @include block;
-                    justify-content: center !important;
+                    @include block(center);
                     ul{
                         width: 45%;
-                        @include block;
+                        @include block(space-evenly);
                     }
                 }
             }
