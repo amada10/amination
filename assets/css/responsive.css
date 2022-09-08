@@ -120,7 +120,7 @@
     justify-content: space-evenly;
   }
   header .other {
-    width: 20%;
+    width: 15%;
     display: flex;
     flex-direction: row;
     align-items: center;
