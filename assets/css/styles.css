@@ -195,6 +195,10 @@
 }
 /*COLOR*/
 /*FONT*/
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0px 0px 60px 0px !important;
   background-color: #F0F0F0;
@@ -279,6 +283,20 @@ header .other button:hover {
 }
 
 /*SECTION STYLE*/
+section .scroll-to-top {
+  position: fixed;
+  z-index: 10;
+  bottom: 15px;
+  right: 15px;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: #F1895C;
+}
+section .scroll-to-top i {
+  color: #F0F0F0;
+}
 section .banniere {
   height: 560px;
   position: relative;

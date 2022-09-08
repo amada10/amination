@@ -195,6 +195,10 @@
 }
 /*COLOR*/
 /*FONT*/
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0px 0px 60px 0px !important;
   background-color: #F0F0F0;

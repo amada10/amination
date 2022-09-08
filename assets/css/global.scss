@@ -12,6 +12,10 @@ $inkFree: 'Ink Free'; //navigation
 $brushScript: 'Brush Script MT'; //logo
 $trebuchet: 'Trebuchet MS';
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0px 0px 60px 0px !important;
     background-color: $white;
