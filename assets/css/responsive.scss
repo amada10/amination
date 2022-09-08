@@ -117,6 +117,96 @@
                     }
                 }
             }
+            article{
+                position: relative;
+                .list-card{
+                    width: 100%;
+                    margin: 160px auto 30px auto;
+                    height: auto;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-evenly;
+                    .card{
+                        width: 700%;
+                        height: 250px;
+                        margin: 20px;
+                        border: 1px solid black;
+                        border-radius: 15px;
+                        display: flex;
+                        flex-direction: column;
+                        .img-card{
+                            height: 200px;
+                            img{
+                                border-radius: 15px;
+                                max-height: 100%;
+                                max-width: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                        .footer-card{
+                            margin: 0px 10px;
+                            display: flex;
+                            justify-content: space-between;
+                            .pub-owner{
+                                img{
+                                    height: 25px;
+                                    margin-right: 5px;
+                                    width: 25px;
+                                    border-radius: 25px;
+                                }
+                                display: flex;
+                                align-items: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        article{
+            position: relative;
+            .list-card{
+                width: 100%;
+                margin: 100px auto 30px auto;
+                height: auto;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                .card{
+                    width: 50%;
+                    height: 200px;
+                    margin: 20px;
+                    border: 1px solid black;
+                    border-radius: 15px;
+                    display: flex;
+                    flex-direction: column;
+                    .img-card{
+                        height: 200px;
+                        img{
+                            border-radius: 15px;
+                            max-height: 100%;
+                            max-width: 100%;
+                            object-fit: contain;
+                        }
+                    }
+                    .footer-card{
+                        margin: 0px;
+                        display: flex;
+                        justify-content: space-between;
+                        .pub-owner{
+                            img{
+                                height: 25px;
+                                margin-right: 5px;
+                                width: 25px;
+                                border-radius: 25px;
+                            }
+                            display: flex;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
         }
     }
 
