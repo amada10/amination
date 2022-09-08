@@ -117,10 +117,9 @@
     justify-content: space-evenly;
   }
   section .banniere article .list-card .card {
-    width: 700%;
+    width: 100%;
     height: 250px;
     margin: 20px;
-    border: 1px solid black;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -138,6 +137,7 @@
   section .banniere article .list-card .card .footer-card {
     margin: 0px 10px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
   section .banniere article .list-card .card .footer-card .pub-owner {
@@ -166,7 +166,6 @@
     width: 50%;
     height: 200px;
     margin: 20px;
-    border: 1px solid black;
     border-radius: 15px;
     display: flex;
     flex-direction: column;

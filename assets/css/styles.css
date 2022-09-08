@@ -117,10 +117,9 @@
     justify-content: space-evenly;
   }
   section .banniere article .list-card .card {
-    width: 700%;
+    width: 100%;
     height: 250px;
     margin: 20px;
-    border: 1px solid black;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -138,6 +137,7 @@
   section .banniere article .list-card .card .footer-card {
     margin: 0px 10px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
   section .banniere article .list-card .card .footer-card .pub-owner {
@@ -166,7 +166,6 @@
     width: 50%;
     height: 200px;
     margin: 20px;
-    border: 1px solid black;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -465,6 +464,8 @@ section article .list-card {
   justify-content: space-evenly;
 }
 section article .list-card .card {
+  cursor: pointer;
+  position: relative;
   width: 20%;
   height: 270px;
   margin: 20px;
@@ -481,6 +482,28 @@ section article .list-card .card .img-card img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+section article .list-card .card .hover-information {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  padding-bottom: 20px;
+  display: none;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+section article .list-card .card .hover-information span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #F0F0F0;
+}
+section article .list-card .card .hover-information i {
+  background-color: #F0F0F0;
+  padding: 10px;
+  border-radius: 10px;
 }
 section article .list-card .card .footer-card {
   margin: 0px 10px;

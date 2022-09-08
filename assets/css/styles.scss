@@ -156,6 +156,8 @@ section{
             flex-wrap: wrap;
             justify-content: space-evenly;
             .card{
+                cursor: pointer;
+                position: relative;
                 width: 20%;
                 height: 270px;
                 margin: 20px;
@@ -169,6 +171,28 @@ section{
                         height: 240px;
                         width: 100%;
                         object-fit: cover;
+                    }
+                }
+                .hover-information{
+                    position: absolute;
+                    width: 100%;
+                    left: 0;
+                    bottom: 0;
+                    height: 50px;
+                    padding-bottom: 20px;
+                    display: none;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    background-color: rgba(0, 0, 0, 0.6);
+                    span{
+                        font-size: 18px;
+                        font-weight: bold;
+                        color: global.$white;
+                    }
+                    i{
+                        background-color: global.$white;
+                        padding: 10px;
+                        border-radius: 10px;
                     }
                 }
                 .footer-card{

@@ -128,10 +128,9 @@
                     flex-wrap: wrap;
                     justify-content: space-evenly;
                     .card{
-                        width: 700%;
+                        width: 100%;
                         height: 250px;
                         margin: 20px;
-                        border: 1px solid black;
                         border-radius: 15px;
                         display: flex;
                         flex-direction: column;
@@ -147,6 +146,7 @@
                         .footer-card{
                             margin: 0px 10px;
                             display: flex;
+                            flex-wrap: wrap;
                             justify-content: space-between;
                             .pub-owner{
                                 img{
@@ -177,7 +177,6 @@
                     width: 50%;
                     height: 200px;
                     margin: 20px;
-                    border: 1px solid black;
                     border-radius: 15px;
                     display: flex;
                     flex-direction: column;
