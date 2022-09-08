@@ -1,10 +1,21 @@
-
+/*MIXINS FOR RESPONSIVE*/
 @mixin block($justifyContent){
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: $justifyContent;
 }
+
+@mixin responsive-related-search-item($width){
+    width:  $width;
+    @include block(space-evenly);
+    .related-search-item{
+        margin: 3px 5px;
+    }
+}
+
+//FIN MIXINS
+
 
 /*Smartphone*/
 @media only screen and (min-width: 50px) and (max-width: 660px){
@@ -36,8 +47,22 @@
         .banniere{
             .myVideoBg{
                 width: 100%;
-                height: 560px;
+                min-height: 800px;
+                height: auto;
                 object-fit: cover;
+            }
+            .mask-video{
+                min-height: 800px;
+                height: auto;
+            }
+            .content{
+                .related-search{
+                    @include block(center);
+                    ul{
+                        @include responsive-related-search-item(65%);
+                        flex-wrap: wrap;
+                    }
+                }
             }
         }
     }
@@ -74,6 +99,14 @@
                 width: 100%;
                 height: 560px;
                 object-fit: cover;
+            }
+            .content{
+                .related-search{
+                    @include block(center);
+                    ul{
+                        @include responsive-related-search-item(55%);
+                    }
+                }
             }
         }
     }
@@ -116,8 +149,7 @@
                 .related-search{
                     @include block(center);
                     ul{
-                        width: 45%;
-                        @include block(space-evenly);
+                        @include responsive-related-search-item(45%);
                     }
                 }
             }
@@ -125,7 +157,48 @@
     }
 }
 
-//BANIERE
+//Exceptions responsive
+@media screen and (max-width: 478px) {
+    //SECTION
+    section{
+        .banniere{
+            .myVideoBg{
+                width: 100%;
+                min-height: 1000px !important;
+                height: auto;
+                object-fit: cover;
+            }
+            .mask-video{
+                min-height: 1000px !important;
+                height: auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 397px) {
+    section{
+        .banniere{
+            .myVideoBg{
+                width: 100%;
+                min-height: 800px !important;
+                height: auto;
+                object-fit: cover;
+            }
+            .mask-video{
+                min-height: 800px !important;
+                height: auto;
+            }
+            .content{
+                .related-search{
+                    display: none !important;
+                }
+            }
+        }
+    }
+}
+
+//BANIERE for < 525px
 @media screen and (max-width: 525px){
     section{
         .banniere{

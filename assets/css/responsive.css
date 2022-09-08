@@ -1,3 +1,4 @@
+/*MIXINS FOR RESPONSIVE*/
 /*Smartphone*/
 @media only screen and (min-width: 50px) and (max-width: 660px) {
   body {
@@ -26,9 +27,31 @@
   }
   section .banniere .myVideoBg {
     width: 100%;
-    height: 560px;
+    min-height: 800px;
+    height: auto;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  section .banniere .mask-video {
+    min-height: 800px;
+    height: auto;
+  }
+  section .banniere .content .related-search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  section .banniere .content .related-search ul {
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  section .banniere .content .related-search ul .related-search-item {
+    margin: 3px 5px;
   }
 }
 /*Tablette large*/
@@ -63,6 +86,22 @@
     height: 560px;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  section .banniere .content .related-search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  section .banniere .content .related-search ul {
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  section .banniere .content .related-search ul .related-search-item {
+    margin: 3px 5px;
   }
 }
 /*Desktop*/
@@ -108,6 +147,38 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+  }
+  section .banniere .content .related-search ul .related-search-item {
+    margin: 3px 5px;
+  }
+}
+@media screen and (max-width: 478px) {
+  section .banniere .myVideoBg {
+    width: 100%;
+    min-height: 1000px !important;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  section .banniere .mask-video {
+    min-height: 1000px !important;
+    height: auto;
+  }
+}
+@media screen and (max-width: 397px) {
+  section .banniere .myVideoBg {
+    width: 100%;
+    min-height: 800px !important;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  section .banniere .mask-video {
+    min-height: 800px !important;
+    height: auto;
+  }
+  section .banniere .content .related-search {
+    display: none !important;
   }
 }
 @media screen and (max-width: 525px) {
