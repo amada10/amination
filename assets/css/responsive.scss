@@ -14,6 +14,12 @@
     }
 }
 
+@mixin related-search-responsive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 //FIN MIXINS
 
 
@@ -57,7 +63,7 @@
             }
             .content{
                 .related-search{
-                    @include block(center);
+                    @include related-search-responsive;
                     ul{
                         @include responsive-related-search-item(65%);
                         flex-wrap: wrap;
@@ -97,12 +103,15 @@
         .banniere{
             .myVideoBg{
                 width: 100%;
-                height: 560px;
+                height: 650px;
                 object-fit: cover;
+            }
+            .mask-video{
+                height: 650px;
             }
             .content{
                 .related-search{
-                    @include block(center);
+                    @include related-search-responsive;
                     ul{
                         @include responsive-related-search-item(55%);
                     }

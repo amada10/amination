@@ -38,9 +38,8 @@
   }
   section .banniere .content .related-search {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
   }
   section .banniere .content .related-search ul {
     width: 65%;
@@ -83,15 +82,17 @@
   }
   section .banniere .myVideoBg {
     width: 100%;
-    height: 560px;
+    height: 650px;
     -o-object-fit: cover;
        object-fit: cover;
   }
+  section .banniere .mask-video {
+    height: 650px;
+  }
   section .banniere .content .related-search {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
   }
   section .banniere .content .related-search ul {
     width: 55%;
