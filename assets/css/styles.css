@@ -525,4 +525,16 @@ section article .list-card .card .footer-card .pub-owner img {
 section article .list-card .card .footer-card .mention {
   color: #3d3d4e;
   font-size: 12px;
+}
+
+footer {
+  height: 50px;
+  display: flex;
+  margin-top: 50px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .contact a, footer .contact i {
+  color: #F1895C;
 }/*# sourceMappingURL=styles.css.map */

@@ -222,3 +222,17 @@ section{
         }
     }
 }
+
+footer{
+    height: 50px;
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .contact{
+        a, i {
+            color: global.$secondary;
+        }
+    }
+}

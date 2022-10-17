@@ -8,3 +8,7 @@ card.forEach((oneCard) => {
         oneCard.childNodes[3].style.display = 'none';
     });
 })
+
+let year = document.getElementById('anneeCopyright');
+let date = new Date();
+year.textContent = date.getFullYear();
