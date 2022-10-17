@@ -480,18 +480,18 @@ section article .list-card .card {
   cursor: pointer;
   position: relative;
   width: 20%;
-  height: 270px;
+  height: 210px;
   margin: 20px;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
 }
 section article .list-card .card .img-card {
-  height: 250px;
+  height: 220px;
 }
 section article .list-card .card .img-card img {
   border-radius: 15px;
-  height: 240px;
+  height: 200px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -500,20 +500,21 @@ section article .list-card .card .hover-information {
   position: absolute;
   width: 100%;
   left: 0;
-  bottom: 0;
+  bottom: 9px;
+  display: none;
   height: 50px;
   padding-bottom: 20px;
-  display: none;
   align-items: center;
   justify-content: space-evenly;
   background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 0px 0px 20px 20px;
 }
 section article .list-card .card .hover-information span {
   font-size: 18px;
   font-weight: bold;
   color: #F0F0F0;
 }
-section article .list-card .card .hover-information i {
+section article .list-card .card .hover-information .bouton i {
   background-color: #F0F0F0;
   padding: 10px;
   border-radius: 10px;
@@ -522,6 +523,7 @@ section article .list-card .card .footer-card {
   margin: 0px 10px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 section article .list-card .card .footer-card .pub-owner {
   display: flex;
@@ -532,4 +534,20 @@ section article .list-card .card .footer-card .pub-owner img {
   margin-right: 5px;
   width: 20px;
   border-radius: 20px;
+}
+section article .list-card .card .footer-card .mention {
+  color: #3d3d4e;
+  font-size: 12px;
+}
+
+footer {
+  height: 50px;
+  display: flex;
+  margin-top: 50px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .contact a, footer .contact i {
+  color: #F1895C;
 }/*# sourceMappingURL=styles.css.map */
