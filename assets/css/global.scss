@@ -42,3 +42,16 @@ a{
     left: 0;
     bottom: 0;
 }
+
+.background_mouse{
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 80px;
+    border-radius: 80px;
+    background-color: $secondary;
+    color: $white;
+    opacity: 0.4;
+}

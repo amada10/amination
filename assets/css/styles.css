@@ -320,6 +320,19 @@ a {
   bottom: 0;
 }
 
+.background_mouse {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  height: 80px;
+  width: 80px;
+  border-radius: 80px;
+  background-color: #F1895C;
+  color: #F0F0F0;
+  opacity: 0.4;
+}
+
 /*Header style*/
 header {
   display: flex;
