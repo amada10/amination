@@ -12,3 +12,6 @@ card.forEach((oneCard) => {
 let year = document.getElementById('anneeCopyright');
 let date = new Date();
 year.textContent = date.getFullYear();
+
+let srcVideoElement = document.getElementById('sourceVideo');
+let topTab = document.querySelectorAll('.top-tab-item');
